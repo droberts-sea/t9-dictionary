@@ -1,0 +1,112 @@
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phone {
+  width: 12rem;
+  margin: 0 1rem;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  gap: 2px;
+  padding: 2px;
+}
+
+.display--input {
+  border: 1px solid black;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 1px;
+  gap: 1px;
+
+  border: 1px solid #0aa3c2;
+
+  background-color: #dddddd;
+}
+
+.keyboard-button {
+  border: 1px solid #0aa3c2;
+  background-color: white;
+}
+
+.keyboard-button:hover {
+  background-color: #eeeeee;
+}
+
+.keyboard-button:active {
+  background-color: #dddddd;
+}
+
+.keyboard-button--number {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.keyboard-button--subtext {
+  text-align: center;
+  color: darkgrey;
+}
+
+.performance {
+  min-width: 12rem;
+  max-width: 25rem;
+  margin: 0 1rem;
+}
+
+.performance-report {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.performance-report--controls {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.performance-task {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.performance-task:not(:first-child) {
+  border-top: 1px solid black;
+  padding-top: 1rem;
+}
+
+.performance-task--stop-button {
+  height: 1rem;
+  width: 1.5rem;
+  padding: 0;
+  background-color: #e7175f;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.performance-task--stop-button[disabled] {
+  background-color: #dddddd;
+}
+
+.performance-task--progress-bar-container {
+  height: 1rem;
+
+  background-color: #dddddd;
+  border: 1px solid black;
+}
+
+.performance-task--progress-bar {
+  background-color: #0aa3c2;
+  height: 100%;
+}
